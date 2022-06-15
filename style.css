@@ -9,7 +9,7 @@
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  color: #00457c;
+  color: #014b96;
   background: #fff;
   position: relative;
 }
@@ -303,11 +303,23 @@
 
 #es-acc.es-acc .es-long__text {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   line-height: inherit;
   color: inherit;
   font-size: 15px;
   margin-bottom: 8px;
+  border-bottom: 1px solid #00457c;
+  text-align: center;
+}
+
+#es-acc.es-acc .es-long__text-last {
+  margin: 0;
+  padding: 20px 0;
+  line-height: inherit;
+  color: inherit;
+  font-size: 23px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 @media screen and (min-width: 1025px) {
@@ -319,7 +331,7 @@
 #es-acc.es-acc .es-signature {
   position: absolute;
   right: 0;
-  bottom: 140px;
+  bottom: 380px;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transform: rotate(-90deg);
