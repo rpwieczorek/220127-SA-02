@@ -264,8 +264,14 @@
   background-color: #4488cc;
 }
 
+#es-acc.es-acc .es-table__th {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid white;
+  font-size: 22px;
+}
 
-#es-acc.es-acc .es-table__th, #es-acc.es-acc .es-table__td {
+#es-acc.es-acc .es-table__td {
   padding: 16px;
   text-align: center;
   border: 2px solid white;
@@ -285,10 +291,6 @@
 #es-acc.es-acc .es-table__th span, #es-acc.es-acc .es-table__td span {
   font-weight: 600;
   text-transform: uppercase;
-}
-
-#es-acc.es-acc .es-table__th {
-  padding: 24px;
 }
 
 #es-acc.es-acc .es-long {
