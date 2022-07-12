@@ -9,19 +9,387 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,300;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    #es-acc.es-acc {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.4;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      color: #014b96;
+      background: #fff;
+      position: relative;
+    }
+
+    #es-acc.es-acc .es-kv__img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    #es-acc.es-acc .es-kv__img--desktop {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      #es-acc.es-acc .es-kv__banner {
+        margin-bottom: -14px;
+      }
+      #es-acc.es-acc .es-kv__img--mobile {
+        display: none;
+      }
+      #es-acc.es-acc .es-kv__img--desktop {
+        display: block;
+      }
+    }
+
+    #es-acc.es-acc .es-features {
+      padding: 0 24px;
+      margin-bottom: 64px;
+    }
+
+    #es-acc.es-acc .es-features__container {
+      margin: 32px 0;
+    }
+
+    #es-acc.es-acc .es-features .es-feature__img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      transition: -webkit-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    }
+
+    #es-acc.es-acc .es-features .es-feature__img:hover {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+
+    #es-acc.es-acc .es-features .es-feature__text {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+      margin: 16px 0 32px 0;
+      font-size: 24px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    @media screen and (min-width: 1025px) {
+      #es-acc.es-acc .es-features {
+        padding: 0 27px;
+      }
+      #es-acc.es-acc .es-features__container {
+        margin: 56px 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+      }
+      #es-acc.es-acc .es-features__feature {
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+      }
+      #es-acc.es-acc .es-features__feature:not(:last-child) {
+        margin-right: 16px;
+      }
+      #es-acc.es-acc .es-features .es-feature__text {
+        margin: 16px 0 0 0;
+      }
+    }
+
+    #es-acc.es-acc .es-info {
+      padding: 0 24px;
+      margin-bottom: 56px;
+    }
+
+    #es-acc.es-acc .es-info__text {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+      font-size: 18px;
+    }
+
+    #es-acc.es-acc .es-info__text strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    #es-acc.es-acc .es-info__text span {
+      color: #044d97;
+      font-weight: 900;
+      font-size: 30px;
+    }
+
+    #es-acc.es-acc .es-info__img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1025px) {
+      #es-acc.es-acc .es-info__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+      #es-acc.es-acc .es-info__text {
+        text-align: justify;
+      }
+      #es-acc.es-acc .es-info__text--aside {
+        width: 50%;
+        text-align: justify;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+      }
+      #es-acc.es-acc .es-info__packshot {
+        width: 50%;
+        margin-top: 0;
+        margin-bottom: -56px;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+      }
+    }
+
+    @media screen and (min-width: 1025px) {
+      #es-acc.es-acc .es-info {
+        padding: 0 27px;
+        margin-bottom: 24px;
+      }
+      #es-acc.es-acc .es-info__text--aside strong {
+        display: block;
+      }
+    }
+
+    #es-acc.es-acc .es-dose {
+      padding: 0 24px;
+      margin-bottom: 56px;
+    }
+
+    #es-acc.es-acc .es-dose__text {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+    }
+
+    #es-acc.es-acc .es-dose__img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #es-acc.es-acc .es-dose__text p{
+      padding-left: 55px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+    #es-acc.es-acc .es-dose__text strong{
+      display: block;
+      text-transform: uppercase;
+      font-size: 50px;
+      font-weight: 900;
+    }
+
+    @media screen and (min-width: 1025px) {
+      #es-acc.es-acc .es-dose__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #es-acc.es-acc .es-dose__text {
+        width: 60%;
+        text-align: left;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        border-left: 5px solid #014b96;
+      }
+      
+      #es-acc.es-acc .es-dose__img {
+        width: 40%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+      }
+    }
+
+    #es-acc.es-acc .es-table {
+      padding: 0 24px;
+    }
+
+    #es-acc.es-acc .es-table__title {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+      font-size: 32px;
+      text-align: center;
+      font-weight: 900;
+      margin: 48px 0;
+      text-transform: uppercase;
+    }
+
+    #es-acc.es-acc .es-table__title strong {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    #es-acc.es-acc .es-table__table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #es-acc.es-acc .es-table__head {
+      background-color: #00467e;
+      color: #fff;
+    }
+    #es-acc.es-acc .es-table__head .es-table__th-empty{
+      background-color: white;
+    }
+
+    #es-acc.es-acc .es-table__head .es-table__th-middle{
+      background-color: #4488cc;
+    }
+
+    #es-acc.es-acc .es-table__th {
+      padding: 10px;
+      text-align: center;
+      border: 2px solid white;
+      font-size: 22px;
+    }
+
+    #es-acc.es-acc .es-table__td {
+      padding: 16px;
+      text-align: center;
+      border: 2px solid white;
+      font-size: 16px;
+    }
+
+    #es-acc.es-acc .es-table__td-odd {
+      background-color: #d8e8f7;
+    }
+    #es-acc.es-acc .es-table__td-even {
+      background-color: #ecf4fc;
+    }
+    #es-acc.es-acc .es-table__td-firstcol {
+      background-color: #f0f1f1;
+    }
+
+    #es-acc.es-acc .es-table__th span, #es-acc.es-acc .es-table__td span {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    #es-acc.es-acc .es-long {
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    #es-acc.es-acc .es-long__container {
+      padding: 32px 0;
+    }
+
+    #es-acc.es-acc .es-long__text {
+      margin: 0;
+      padding: 20px 0;
+      line-height: inherit;
+      color: inherit;
+      font-size: 15px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #00457c;
+      text-align: center;
+    }
+
+    #es-acc.es-acc .es-long__text-last {
+      margin: 0;
+      padding: 20px 0;
+      line-height: inherit;
+      color: inherit;
+      font-size: 23px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1025px) {
+      #es-acc.es-acc .es-long {
+        padding: 0 27px;
+      }
+    }
+
+    #es-acc.es-acc .es-signature {
+      position: absolute;
+      right: 0;
+      bottom: 380px;
+      -webkit-transform-origin: bottom right;
+              transform-origin: bottom right;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+    }
+
+    #es-acc.es-acc .es-signature__text {
+      margin: 0;
+      padding: 0;
+      line-height: inherit;
+      color: inherit;
+      font-size: 15px;
+    }
+    /*# sourceMappingURL=style.css.map */
+    @media screen and (min-width: 1025px) {
+      #es-acc.es-acc .es-features__feature {
+          max-width: 23%;
+      }
+      
+      #es-acc.es-acc .es-features .es-feature__text {
+          font-size: 20px;
+      }
+      #es-acc.es-acc .es-info__packshot {
+        margin-left: 16px;
+      }
+    }
+      
+      @media screen and (max-width: 1024px) {
+      #es-acc.es-acc .es-table__th, #es-acc.es-acc .es-table__td {
+          font-size: 15px;
+          padding: 16px;
+      }
+    }
+  </style>
   <body>
     <div class="es-acc" id="es-acc">
       <div class="es-kv">
         <div class="es-kv__banner">
           <img
-            src="img/kv-mobile.png"
+            src="https://wieczorek.website/rc/sandoz/acc/kv-mobile.png"
             alt="ACC skraca kaszel"
             class="es-kv__img es-kv__img--mobile"
           />
           <img
-            src="img/kv.png"
+            src="https://wieczorek.website/rc/sandoz/acc/kv.png"
             alt="ACC skraca kaszel"
             class="es-kv__img es-kv__img--desktop"
           />
@@ -32,25 +400,25 @@
         <div class="es-features__container">
           <div class="es-features__feature es-feature">
             <div class="es-feature__icon">
-              <img src="img/icon-1.png" alt="" class="es-feature__img" />
+              <img src="https://wieczorek.website/rc/sandoz/acc/icon-1.png" alt="" class="es-feature__img" />
             </div>
             <p class="es-feature__text">Nr 1<br>na kaszel**</p>
           </div>
           <div class="es-features__feature">
             <div class="es-feature__icon">
-              <img src="img/icon-2.png" alt="" class="es-feature__img" />
+              <img src="https://wieczorek.website/rc/sandoz/acc/icon-2.png" alt="" class="es-feature__img" />
             </div>
             <p class="es-feature__text">Rozrzedza wydzielinę</p>
           </div>
           <div class="es-features__feature">
             <div class="es-feature__icon">
-              <img src="img/icon-3.png" alt="" class="es-feature__img" />
+              <img src="https://wieczorek.website/rc/sandoz/acc/icon-3.png" alt="" class="es-feature__img" />
             </div>
             <p class="es-feature__text">Ułatwia odksztuszanie</p>
           </div>
           <div class="es-features__feature">
             <div class="es-feature__icon">
-              <img src="img/icon-4.png" alt="" class="es-feature__img" />
+              <img src="https://wieczorek.website/rc/sandoz/acc/icon-4.png" alt="" class="es-feature__img" />
             </div>
             <p class="es-feature__text">Wzmacnia <br> ochronę oskrzeli**</p>
           </div>
@@ -60,7 +428,7 @@
       <div class="es-info">
         <div class="es-info__container">
           <div class="es-info__packshot">
-            <img src="img/packshot.png" alt="" class="es-info__img" />
+            <img src="https://wieczorek.website/rc/sandoz/acc/packshot.png" alt="" class="es-info__img" />
           </div>
           <p class="es-info__text es-info__text--aside">
             <strong
@@ -105,7 +473,7 @@
             </p>
           </div>
           <div class="es-dose_img">
-            <img src="img/dose.png" alt="" class="es-info__img" />
+            <img src="https://wieczorek.website/rc/sandoz/acc/dose.png" alt="" class="es-info__img" />
           </div>
         </div>
       </div>
@@ -117,13 +485,13 @@
             <tr class="es-table__tr">
               <th colspan="2" class="es-table__th-empty"></th>
               <th class="es-table__th-empty">
-                <img src="img/classic.png" alt="ACC Classic">
+                <img src="https://wieczorek.website/rc/sandoz/acc/classic.png" alt="ACC Classic">
               </th>
               <th class="es-table__th-empty">
-                <img src="img/acc.png" alt="ACC">
+                <img src="https://wieczorek.website/rc/sandoz/acc/acc.png" alt="ACC">
               </th>
               <th class="es-table__th-empty">
-                <img src="img/optima-active.png" alt="ACC Optima Active">
+                <img src="https://wieczorek.website/rc/sandoz/acc/optima-active.png" alt="ACC Optima Active">
               </th>
             </tr>
             <tr class="es-table__tr">
@@ -176,10 +544,10 @@
                 <strong>2-3</strong> razy na dobę
               </td>
               <td class="es-table__td es-table__td-even">
-                <img src="img/line-table.png" alt="">
+                <img src="https://wieczorek.website/rc/sandoz/acc/line-table.png" alt="">
               </td>
               <td class="es-table__td es-table__td-odd">
-                <img src="img/line-table.png" alt="">
+                <img src="https://wieczorek.website/rc/sandoz/acc/line-table.png" alt="">
               </td>
             </tr>
             <tr class="es-table__tr">
@@ -191,7 +559,7 @@
                 <strong>1</strong> tabletka<br />
                 <strong>2</strong> razy na dobę</td>
               <td class="es-table__td es-table__td-odd">
-                <img src="img/line-table.png" alt="">
+                <img src="https://wieczorek.website/rc/sandoz/acc/line-table.png" alt="">
               </td>
             </tr>
             <tr class="es-table__tr">
